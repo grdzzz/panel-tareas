@@ -76,15 +76,23 @@ form input#sub:hover {
 
 button {
     padding: 10px 10px;
-    background-color: lightcoral;
     text-align: center;
     border: 0;
     border-radius: 10px;
     font-weight: bold;
     position: absolute;
     top: 0;
-    right: 0;
     margin: 5px;
+}
+
+button.btn-borrar {
+    background-color: lightcoral;
+    right: 0;
+}
+
+button.btn-calendario{
+    background-color: lightgreen;
+    left: 0;
 }
 
 button {
