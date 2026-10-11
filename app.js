@@ -21,11 +21,12 @@ function dibujar() {
   });
 
   tareas.forEach(function (tarea) {
+
     const li = document.createElement('li');
     const negrita = document.createElement('strong');
     negrita.textContent = tarea.nombre;
     li.append(negrita, ', ' + tarea.asignatura + ', ' + formatearFecha(tarea.fecha));
-        const borrar = document.createElement('button');
+    const borrar = document.createElement('button');
     borrar.textContent = '✕';
     borrar.addEventListener('click', function (evento) {
       evento.stopPropagation();
